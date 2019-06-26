@@ -1,7 +1,7 @@
 /**
  * DataTable
  */
-.rmwc-data-table {
+& {
   position: relative;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -130,7 +130,7 @@
 }
 
 .rmwc-data-table__cell:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;

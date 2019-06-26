@@ -13,6 +13,8 @@ export default class DataTable extends Component {
   stickyColumns: 0 | 1 = 0
   stickyRows: 0 | 1 = 0
 
+  data: any[] = []
+
   @computed('stickyColumns')
   get hasStickyColumns(): boolean {
     return !!this.stickyColumns

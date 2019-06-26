@@ -1,1 +1,11 @@
-@import "pod-styles";
+@import 'pod-styles';
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.Container {
+  padding: 2rem;
+}

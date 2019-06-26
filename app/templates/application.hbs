@@ -1,7 +1,11 @@
-<h1>Data Table</h1>
+<div class="Container">
 
-<DataTable @stickyRows={{1}}>
-  <SortIcon></SortIcon>
-</DataTable>
+  <h1>Data Table</h1>
 
-<button>Add Row</button>
+  <DataTable @stickyRows={{1}} @data={{this.productsCollection}} />
+
+  <div>
+    <button onclick={{action "addProduct"}}>Add Row</button>
+  </div>
+
+</div>
