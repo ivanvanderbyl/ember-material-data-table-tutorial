@@ -1,5 +1,9 @@
 import Component from '@ember/component'
-import { computed } from '@ember/object'
+type Column = {
+  prop: string
+  name: string
+  align: 'start' | 'middle' | 'end'
+}
 
 export default class DataTable extends Component {
   classNames = ['rmwc-data-table']
