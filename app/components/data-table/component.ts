@@ -8,6 +8,7 @@ export default class DataTable extends Component {
     'hasStickyColumns:rmwc-data-table--sticky-columns-1',
     'hasStickyRows:rmwc-data-table--sticky-rows',
     'hasStickyRows:rmwc-data-table--sticky-rows-1',
+    'stickRowsClassName',
   ]
 
   stickyColumns: 0 | 1 = 0
@@ -24,4 +25,10 @@ export default class DataTable extends Component {
   get hasStickyRows(): boolean {
     return !!this.stickyRows
   }
+
+  @computed('stickyRows')
+  get stickRowsClassName() {
+    return `rmwc-data-table--sticky-rows-${this.stickyRows}`
+  }
+
 }
